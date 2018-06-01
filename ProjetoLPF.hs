@@ -24,7 +24,7 @@ type Bebidas = [(String, Preco)]
 type Sobremesas = [(String, Preco)]
 type Petiscos = [(String, Preco)]
 type Principal = [(String, Preco)]
-type Pedidos = [(String, Preco)]
+type Pedido = [(String, Preco)]
 
 data Cliente = Cliente Nome Cpf Endereco Fone
                deriving(Show, Read, Eq)
