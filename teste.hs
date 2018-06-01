@@ -4,3 +4,5 @@ main = do
   if x == "2"
     then putStrLn "Dois"
     else putStrLn "Nao dois"
+
+ --comentario
