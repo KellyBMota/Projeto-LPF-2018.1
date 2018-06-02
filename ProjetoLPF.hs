@@ -13,7 +13,7 @@ import System.IO.Error
 import Control.Monad
 import System.Process
 
-{--
+
 --definição de tipos de dados
 type Clientes = [Cliente]
 type Nome = String
@@ -34,7 +34,7 @@ data Restaurante = Restaurante Nome Endereco Cardapio Clientes Pedidos
                    deriving(Show, Read, Eq)
 data Cardapio = Cardapio Bebidas Sobremesas Petiscos Principal
                 deriving(Show, Read, Eq)
---}
+
 
 
 --função menu
@@ -59,9 +59,11 @@ main = do
                  else return ()
 
 --função Cadastro
+cadastro :: IO ()
 cadastro = do
-        putStrLn "Castro feito com sucesso"
+        putStrLn "Cadastro feito com sucesso"
 
  --função Login
+login :: IO ()
 login = do
         putStrLn "Login feito com sucesso"
