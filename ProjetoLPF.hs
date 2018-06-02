@@ -13,7 +13,6 @@ import System.IO.Error
 import Control.Monad
 import System.Process
 
-
 --definição de tipos de dados
 type Clientes = [Cliente]
 type Nome = String
@@ -61,7 +60,19 @@ main = do
 --função Cadastro
 cadastro :: IO ()
 cadastro = do
-        putStrLn "Cadastro feito com sucesso"
+            foo <- getLine
+            putStrLn "Digite seu nome: "
+            nome <- getLine
+            putStrLn "Digite seu cpf: "
+            cpf <- getLine
+            arq <- openFile "Teste.txt" AppendMode
+            hPutStr arq "Cliente: \n"
+            hPutStr arq ("Nome:" ++ nome ++ "\n")
+            hPutStr arq ("Cpf:" ++ cpf ++ "\n")
+            hFlush arq
+            hClose arq
+
+
 
  --função Login
 login :: IO ()
