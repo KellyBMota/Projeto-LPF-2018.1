@@ -1,0 +1,12 @@
+--função Cadastro
+        cadastro :: IO ()
+          cadastro = do
+                      putStrLn "Castro feito com sucesso"
+                      main
+
+
+--função Login
+        login :: IO ()
+          login = do
+                    putStrLn "Login feito com sucesso"
+                      main
