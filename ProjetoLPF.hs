@@ -78,3 +78,5 @@ cadastro = do
 login :: IO ()
 login = do
         putStrLn "Login feito com sucesso"
+
+--Daniel
