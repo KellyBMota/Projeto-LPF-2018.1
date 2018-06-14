@@ -1,3 +1,0 @@
-Cliente: 
-Nome:Tito
-Cpf:22222

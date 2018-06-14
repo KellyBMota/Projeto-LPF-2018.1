@@ -1,0 +1,5 @@
+Agua 1.5
+Refrigerante 3.0
+Suco 2.0
+Cerveja Amanteigada 10.0
+Chopp 15.0
