@@ -1,5 +1,5 @@
 {-
-    Projeto LPF - Ifood
+    Projeto LPF - FoodFast
     Alunos: Daniel Almeida
             Estyvison Linhares
             Kelly Bezerra
@@ -19,17 +19,17 @@ import Cardapio
 
 --função menu
 main = do
-       putStrLn "Bem-vindo ao aplicativo FoodFast! Realize a operação desejada: "
+       putStrLn "\n\nBem-vindo ao aplicativo FoodFast! Realize a operação desejada:\n"
        putStrLn "1-Cadastro"
        putStrLn "2-Cardapio"
-       putStrLn "3-Fechar aplicativo"
+       putStrLn "3-Fechar aplicativo\n\n"
        opcao <- getChar
        if opcao == ' '
          then return ()
          else do
            if opcao == '1'
              then do
-               cadastro
+               cadastrar
                main
              else do
                if opcao == '2'

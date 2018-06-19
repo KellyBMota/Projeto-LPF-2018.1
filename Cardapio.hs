@@ -7,6 +7,7 @@ import System.IO.Error
 import Control.Monad
 import System.Process
 import Data.List
+import tCardapio
 
 type Preco = Float
 type Bebidas = [(String, Preco)]
@@ -15,28 +16,31 @@ type Petiscos = [(String, Preco)]
 type Principal = [(String, Preco)]
 type Pedido = [(String, Preco)]
 
-
 mostrarCardapio = do
-    foo <- getLine
-    putStrLn "Bem vindo ao nosso umildi estabelecimento, aqui estao alguma opciones de bebidas:"
-    arq <- openFile "arquivos/Cardapio.txt" ReadMode
-    contents <- hGetContents arq
-    let showArq = lines contents
-        opciones = zipWith (\n line -> show n ++ " - " ++ line) [0..] showArq
-    putStr $ unlines opciones
-    opcao <- getLine
-    putStrLn $ "opção escolhida:" ++ opcao  --f(g(x)) -> f $ g x     
-    let number = read opcao     
-        itemPedido = (showArq !! number)
-    appendFile "arquivos/Pedido.txt" (itemPedido ++ "\n") 
+    putStrLn "\n\n Escolha uma das opções: \n1- Pratos Principais\n2- Petiscos\n3- Sobremesas\n4- Bebidas\n5- Fechar Pedido"
+    if opcao == '1'
+                  then do
+                      pratosPrincipais
+                  else do
+                      if opcao == '2'
+                         then do
+                            petiscos
+                         else do
+                            if opcao == '3'
+                               then do
+                                  sobremesas
+                               else do
+                                  if opcao == '4'
+                                     then do
+                                        bebidas
+                                     else do
+                                        if opcao == '5'
+                                           then do
+                                               putStrLn "Pedido Realizado!"
+                                           else do
+                                               mostrarCardapio
 
-    {--tratarArq :: String -> [String]
-    tratarArq [] = error "pedido vazio"
-    tratarArq arq = $ splitOn ";" arq
+    
 
-    splitOn' :: String -> String -> [String]
-    splitOn' [] _ = error "lista vazia"
-    splitOn' a b = splitOn b a--}
-
-
+    
 
