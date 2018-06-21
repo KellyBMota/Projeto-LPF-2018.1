@@ -7,7 +7,7 @@ import System.IO.Error
 import Control.Monad
 import System.Process
 import Data.List
-import tCardapio
+import TCardapio
 
 type Preco = Float
 type Bebidas = [(String, Preco)]
@@ -18,6 +18,7 @@ type Pedido = [(String, Preco)]
 
 mostrarCardapio = do
     putStrLn "\n\n Escolha uma das opções: \n1- Pratos Principais\n2- Petiscos\n3- Sobremesas\n4- Bebidas\n5- Fechar Pedido"
+    opcao <- getChar
     if opcao == '1'
                   then do
                       pratosPrincipais
