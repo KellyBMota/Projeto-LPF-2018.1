@@ -1,5 +1,6 @@
-Agua 1.5
-Refrigerante 3.0
-Suco 2.0
-Cerveja Amanteigada 10.0
-Chopp 15.0
+Agua 1.50
+Refrigerante 3.00
+Suco 2.00
+Cerveja Amanteigada 10.00
+Chopp 15.00
+Vodka 35.00

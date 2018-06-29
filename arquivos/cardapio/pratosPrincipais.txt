@@ -1,0 +1,8 @@
+Bife a milanesa 30.00
+Maminha completa	 45.00
+Picanha completa 50.00
+Costela no bafo 40.00
+Charque na brasa 42.00
+Javali assado 60.00
+Galeto completo 25.00
+Carne de sol 30.00

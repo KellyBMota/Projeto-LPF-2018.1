@@ -1,0 +1,5 @@
+Bebidas
+Petiscos
+Pratos Principais
+Sobremesas
+Finalizar pedido
