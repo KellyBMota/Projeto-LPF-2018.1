@@ -8,6 +8,7 @@ import Control.Monad
 import System.Process
 import Data.List
 import TCardapio
+import PedidoFinal
 
 type Preco = Float
 type Bebidas = [(String, Preco)]
@@ -23,22 +24,26 @@ mostrarCardapio = do
     if opcao == '1'
                   then do
                       pratosPrincipais
+                      mostrarCardapio
                   else do
                       if opcao == '2'
                          then do
                             petiscos
+                            mostrarCardapio
                          else do
                             if opcao == '3'
                                then do
                                   sobremesas
+                                  mostrarCardapio
                                else do
                                   if opcao == '4'
                                      then do
                                         bebidas
+                                        mostrarCardapio
                                      else do
                                         if opcao == '5'
                                            then do
-                                               putStrLn "Pedido Realizado!"
+                                               mostrarPedido
                                            else do
                                                mostrarCardapio
     putStrLn "\n*******************************************************************\n"

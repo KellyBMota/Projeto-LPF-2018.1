@@ -2,7 +2,8 @@ module Auxiliares (
     elemento,
     index,
     possui,
-    possuiLetra
+    possuiLetra,
+    rFloat
     ) where
 
 import Data.List
@@ -29,3 +30,6 @@ possuiLetra :: String -> Bool
 possuiLetra [] = False
 possuiLetra (a:as) | (isDigit a) = possuiLetra as
                    | otherwise = True
+
+rFloat :: String -> Float
+rFloat str = read str

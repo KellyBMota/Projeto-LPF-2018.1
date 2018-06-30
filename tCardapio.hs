@@ -15,6 +15,7 @@ import System.Process
 import Data.Char
 
 pratosPrincipais = do 
+    foo <- getLine
     arq <- openFile "arquivos\\cardapio\\pratosPrincipais.txt" ReadMode
     contents1 <- hGetContents arq
     let pratos = lines contents1
@@ -25,11 +26,11 @@ pratosPrincipais = do
     let number = read choice     
         itemPedido = (pratos !! number)
     appendFile "arquivos\\pedido.txt" (itemPedido ++ "\n")
-    hFlush arq
     hClose arq
 
 
 petiscos = do
+    foo <- getLine
     arq1 <- openFile "arquivos\\cardapio\\petiscos.txt" ReadMode
     contents2 <- hGetContents arq1
     let pratos = lines contents2
@@ -40,10 +41,10 @@ petiscos = do
     let number = read choice     
         itemPedido = (pratos !! number)
     appendFile "arquivos/pedido.txt" (itemPedido ++ "\n")
-    hFlush arq1
     hClose arq1
 
 sobremesas = do
+    foo <- getLine
     arq2 <- openFile "arquivos/Cardapio/sobremesas.txt" ReadMode
     contents3 <- hGetContents arq2
     let pratos = lines contents3
@@ -54,10 +55,10 @@ sobremesas = do
     let number = read choice     
         itemPedido = (pratos !! number)
     appendFile "arquivos/pedido.txt" (itemPedido ++ "\n")
-    hFlush arq2
     hClose arq2
 
 bebidas = do
+    foo <- getLine
     arq3 <- openFile "arquivos/Cardapio/bebidas.txt" ReadMode
     contents4 <- hGetContents arq3
     let pratos = lines contents4
@@ -68,5 +69,4 @@ bebidas = do
     let number = read choice     
         itemPedido = (pratos !! number)
     appendFile "arquivos/pedido.txt" (itemPedido ++ "\n")
-    hFlush arq3
     hClose arq3
