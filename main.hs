@@ -1,4 +1,4 @@
-﻿{- teste
+﻿{-  
     Projeto LPF - FoodFast
     Alunos: Daniel Almeida
             Estyvison Linhares
