@@ -6,6 +6,7 @@
             Paulo Guilherme
 -}
 
+
 --Módulos:
 import Control.Exception
 import System.IO
@@ -19,10 +20,12 @@ import Cardapio
 
 --função menu
 main = do
-       putStrLn "\n\nBem-vindo ao aplicativo FoodFast! Realize a operação desejada:\n"
+       putStrLn "\n*******************************************************************\n"
+       putStrLn "Bem-vindo ao aplicativo FoodFast! Realize a operação desejada:\n"
        putStrLn "1-Cadastro"
        putStrLn "2-Cardapio"
        putStrLn "3-Fechar aplicativo\n\n"
+       putStrLn "\n*******************************************************************\n\n"
        opcao <- getChar
        if opcao == ' '
          then return ()
@@ -36,6 +39,11 @@ main = do
                  then do
                    login
                    main
-                 else return ()
+                 else do
+                    if opcao == '3'
+                        then do
+                           return()
+                        else do
+                           main
 
 

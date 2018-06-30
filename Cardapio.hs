@@ -17,7 +17,8 @@ type Principal = [(String, Preco)]
 type Pedido = [(String, Preco)]
 
 mostrarCardapio = do
-    putStrLn "\n\n Escolha uma das opções: \n1- Pratos Principais\n2- Petiscos\n3- Sobremesas\n4- Bebidas\n5- Fechar Pedido"
+    putStrLn "\n*******************************************************************\n"
+    putStrLn "\n Escolha uma das opções: \n\n1- Pratos Principais\n2- Petiscos\n3- Sobremesas\n4- Bebidas\n5- Fechar Pedido"
     opcao <- getChar
     if opcao == '1'
                   then do
@@ -40,6 +41,7 @@ mostrarCardapio = do
                                                putStrLn "Pedido Realizado!"
                                            else do
                                                mostrarCardapio
+    putStrLn "\n*******************************************************************\n"
 
     
 
