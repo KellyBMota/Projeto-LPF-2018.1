@@ -11,6 +11,7 @@ import Data.List
 import Auxiliares
 
 mostrarPedido = do
+    foo <- getLine
     putStrLn "\n*******************************************************************\n"
     putStrLn "\n Aqui está seu pedido. Obrigado pela preferência!"
     arq <- openFile "arquivos\\pedido.txt" ReadMode
@@ -24,4 +25,4 @@ mostrarPedido = do
 
 contaFinal :: [String] -> Float
 contaFinal [] = 0
-contaFinal (a:as) = (rFloat (elemento 1 (words a))) + (contaFinal as) 
+contaFinal (a:as) = (rFloat (last (words a))) + (contaFinal as) 

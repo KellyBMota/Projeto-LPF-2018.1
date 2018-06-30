@@ -1,0 +1,6 @@
+Agua 1.50
+Refrigerante Lata 4.50
+Suco 2.00
+Cerveja Amanteigada 10.00
+Chopp 15.00
+Vodka 35.00
