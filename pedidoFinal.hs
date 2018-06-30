@@ -20,8 +20,12 @@ mostrarPedido = do
         opcoes = zipWith (\n line -> show n ++ " - " ++ line) [0..] pedido
     putStr $ unlines opcoes
     let conta = contaFinal pedido
-    putStrLn ("\nConta Final:      " ++ (show conta))
+    putStrLn ("\nTotal:      " ++ (show conta))
+    putStrLn "\nPressione Enter para voltar ao menu"
+    foo2 <- getLine
     putStrLn "\n*******************************************************************\n"
+    writeFile "arquivos\\pedido.txt" ""
+    hClose arq
 
 contaFinal :: [String] -> Float
 contaFinal [] = 0
