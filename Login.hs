@@ -30,7 +30,8 @@ data Cliente = Cliente { nome :: String
 login :: IO ()
 login = do
          foo <- getLine
-         putStrLn "\nLogin... \n"
+         putStrLn "\n*******************************************************************\n"
+         putStrLn "\nLogin \n\n"
          putStrLn "Digite seu cpf: "
          cpf <- getLine
          putStrLn "Digite sua senha: "
@@ -59,7 +60,7 @@ login = do
                             if opcao == '3'
                                then return ()
                                else return ()
-
+         putStrLn "\n*******************************************************************\n"
 
 
 
