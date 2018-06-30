@@ -1,6 +1,6 @@
 Agua 1.50
-Refrigerante 3.00
-Suco 2.00
+Refrigerante Lata 4.50
+Suco Del Vale (Uva ou Pêssego) 4.00
 Cerveja Amanteigada 10.00
-Chopp 15.00
-Vodka 35.00
+Milkshake (Ovomaltine, Morango, Baunilha) 7.00
+Chopp 9.00

@@ -4,4 +4,6 @@ Asinha de frango 5.00
 Pão de alho 3.00
 Bolinho de bacalhau 2.00
 Salgado 4.50
-Fritas 10.00
+Fritas (Porção Pequena) 6.00
+Fritas (Porção Média) 8.00
+Fritas (Porção Grande) 10.00

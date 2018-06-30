@@ -2,5 +2,4 @@ Mousse diversos 4.00
 Pudim 3.00
 Sorvete 5.00
 Trufa 2.50
-Milkshake 5.00
 

@@ -19,11 +19,11 @@ type Pedido = [(String, Preco)]
 
 mostrarCardapio = do
     putStrLn "\n*******************************************************************\n"
-    putStrLn "\n Escolha uma das opções: \n\n1- Pratos Principais\n2- Petiscos\n3- Sobremesas\n4- Bebidas\n5- Fechar Pedido"
+    putStrLn "\n Escolha uma das opções: \n\n1- Hamburguers\n2- Petiscos\n3- Sobremesas\n4- Bebidas\n5- Fechar Pedido"
     opcao <- getChar
     if opcao == '1'
                   then do
-                      pratosPrincipais
+                      hamburguers
                       mostrarCardapio
                   else do
                       if opcao == '2'

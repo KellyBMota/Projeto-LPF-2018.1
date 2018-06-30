@@ -1,5 +1,5 @@
 module TCardapio (
-     pratosPrincipais,
+     hamburguers,
      petiscos,
      sobremesas,
      bebidas   
@@ -14,59 +14,71 @@ import Control.Monad
 import System.Process
 import Data.Char
 
-pratosPrincipais = do 
+hamburguers = do 
     foo <- getLine
-    arq <- openFile "arquivos\\cardapio\\pratosPrincipais.txt" ReadMode
-    contents1 <- hGetContents arq
-    let pratos = lines contents1
-        opcoes = zipWith (\n line -> show n ++ " - " ++ line) [0..] pratos
-    putStr $ unlines opcoes
+    arqmostrar <- openFile "arquivos\\cardapioFastFlix\\hamburguers.txt" ReadMode
+    arqler <- openFile "arquivos\\cardapio\\hamburguers.txt" ReadMode
+    contents1 <- hGetContents arqler
+    contents2 <- hGetContents arqmostrar
+    let pratos1 = lines contents1
+        pratos2 = lines contents2
+    putStr $ unlines pratos2
     choice <- getLine
     putStrLn $ "opção escolhida:" ++ choice    
     let number = read choice     
-        itemPedido = (pratos !! number)
+        itemPedido = (pratos1 !! number)
     appendFile "arquivos\\pedido.txt" (itemPedido ++ "\n")
-    hClose arq
+    hClose arqler
+    hClose arqmostrar
 
 
 petiscos = do
     foo <- getLine
-    arq1 <- openFile "arquivos\\cardapio\\petiscos.txt" ReadMode
-    contents2 <- hGetContents arq1
-    let pratos = lines contents2
-        opcoes = zipWith (\n line -> show n ++ " - " ++ line) [0..] pratos
-    putStr $ unlines opcoes
+    arqmostrar <- openFile "arquivos\\cardapioFastFlix\\petiscos.txt" ReadMode
+    arqler <- openFile "arquivos\\cardapio\\petiscos.txt" ReadMode
+    contents1 <- hGetContents arqler
+    contents2 <- hGetContents arqmostrar
+    let pratos1 = lines contents1
+        pratos2 = lines contents2
+    putStr $ unlines pratos2
     choice <- getLine
     putStrLn $ "opção escolhida:" ++ choice    
     let number = read choice     
-        itemPedido = (pratos !! number)
-    appendFile "arquivos/pedido.txt" (itemPedido ++ "\n")
-    hClose arq1
+        itemPedido = (pratos1 !! number)
+    appendFile "arquivos\\pedido.txt" (itemPedido ++ "\n")
+    hClose arqler
+    hClose arqmostrar
 
 sobremesas = do
     foo <- getLine
-    arq2 <- openFile "arquivos/Cardapio/sobremesas.txt" ReadMode
-    contents3 <- hGetContents arq2
-    let pratos = lines contents3
-        opcoes = zipWith (\n line -> show n ++ " - " ++ line) [0..] pratos
-    putStr $ unlines opcoes
+    arqmostrar <- openFile "arquivos\\cardapioFastFlix\\sobremesas.txt" ReadMode
+    arqler <- openFile "arquivos\\cardapio\\sobremesas.txt" ReadMode
+    contents1 <- hGetContents arqler
+    contents2 <- hGetContents arqmostrar
+    let pratos1 = lines contents1
+        pratos2 = lines contents2
+    putStr $ unlines pratos2
     choice <- getLine
     putStrLn $ "opção escolhida:" ++ choice    
     let number = read choice     
-        itemPedido = (pratos !! number)
-    appendFile "arquivos/pedido.txt" (itemPedido ++ "\n")
-    hClose arq2
+        itemPedido = (pratos1 !! number)
+    appendFile "arquivos\\pedido.txt" (itemPedido ++ "\n")
+    hClose arqler
+    hClose arqmostrar
 
 bebidas = do
     foo <- getLine
-    arq3 <- openFile "arquivos/Cardapio/bebidas.txt" ReadMode
-    contents4 <- hGetContents arq3
-    let pratos = lines contents4
-        opcoes = zipWith (\n line -> show n ++ " - " ++ line) [0..] pratos
-    putStr $ unlines opcoes
+    arqmostrar <- openFile "arquivos\\cardapioFastFlix\\bebidas.txt" ReadMode
+    arqler <- openFile "arquivos\\cardapio\\bebidas.txt" ReadMode
+    contents1 <- hGetContents arqler
+    contents2 <- hGetContents arqmostrar
+    let pratos1 = lines contents1
+        pratos2 = lines contents2
+    putStr $ unlines pratos2
     choice <- getLine
     putStrLn $ "opção escolhida:" ++ choice    
     let number = read choice     
-        itemPedido = (pratos !! number)
-    appendFile "arquivos/pedido.txt" (itemPedido ++ "\n")
-    hClose arq3
+        itemPedido = (pratos1 !! number)
+    appendFile "arquivos\\pedido.txt" (itemPedido ++ "\n")
+    hClose arqler
+    hClose arqmostrar
