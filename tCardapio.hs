@@ -28,6 +28,8 @@ hamburguers = do
     let number = read choice     
         itemPedido = (pratos1 !! number)
     appendFile "arquivos\\pedido.txt" (itemPedido ++ "\n")
+    hFlush arqler
+    hFlush arqmostrar
     hClose arqler
     hClose arqmostrar
 
@@ -46,6 +48,8 @@ petiscos = do
     let number = read choice     
         itemPedido = (pratos1 !! number)
     appendFile "arquivos\\pedido.txt" (itemPedido ++ "\n")
+    hFlush arqler
+    hFlush arqmostrar
     hClose arqler
     hClose arqmostrar
 
@@ -63,6 +67,8 @@ sobremesas = do
     let number = read choice     
         itemPedido = (pratos1 !! number)
     appendFile "arquivos\\pedido.txt" (itemPedido ++ "\n")
+    hFlush arqler
+    hFlush arqmostrar
     hClose arqler
     hClose arqmostrar
 
@@ -80,5 +86,7 @@ bebidas = do
     let number = read choice     
         itemPedido = (pratos1 !! number)
     appendFile "arquivos\\pedido.txt" (itemPedido ++ "\n")
+    hFlush arqler
+    hFlush arqmostrar
     hClose arqler
     hClose arqmostrar

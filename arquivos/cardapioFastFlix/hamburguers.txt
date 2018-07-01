@@ -1,29 +1,29 @@
-1 - La Carne Sem Papel 25.00
+0 - La Carne Sem Papel 25.00
      Pao, Carne de Picanha, Molho Especial, Cheddar Cremoso, Ovo, Alface e Tomate
 
-2 - Narcos 27.50
+1 - Narcos 27.50
      Pao, Carne de Picanha, Presunto, Mussarela, Molho Especial, Alface, Tomate e Cebola
 
-3 - Stranger Burguer 24.00
+2 - Stranger Burguer 24.00
      Pao, Carne Bovina, Ovo, Calabresa, Mussarela, Molho Especial, Alface e Tomate 
 
-4 - The Walking Eggs 28.00
+3 - The Walking Eggs 28.00
      Pao Brioche, Carne Bovina, 2 Ovos, Bacon, Mussarela, Calabresa, Molho Especial, Cheddar Cremoso, Alface e Tomate 
 
-5 - Presunto Break 25.00
+4 - Presunto Break 25.00
      Pao Brioche, Carne Bovina, Presuntos ao Dobro, Mussarela, Ovo, Molho Especial, Alface e Tomate
 
-6 - Game of Fomes 23.00
+5 - Game of Fomes 23.00
      Pao, Carne Bovina, Presunto, Mussarela, Ovo, Molho Especial, Alface e Tomate
 
-7 - Bacon Bad 25.00
+6 - Bacon Bad 25.00
      Pao, Carne Bovina, Cheddar Cremoso, Bacon ao Dobro, Ovo, Molho Especial, Alface e Tomate
 
-8 - Black Milhor 23.00
+7 - Black Milhor 23.00
      Pao, Carne de Frango, Molho Especial, Ovo, Milho, Alface e Tomate
 
-9 - Justibacon 29.00
+8 - Justibacon 29.00
      Pao Brioche, Blend de Carnes, Molho Especial, Bacon, Calabresa, Mussarela, Presunto, Ovo, Cheddar Cremoso, Milho, Alface e Tomate
 
-10 - The Big Burguer Theory 24.00
+9 - The Big Burguer Theory 24.00
      Pao Brioche, 2 Blends de Carne, Molho Especial, Bacon, Calabresa, Mussarela, Ovo, Cheddar Cremoso, Milho, Alface e Tomate

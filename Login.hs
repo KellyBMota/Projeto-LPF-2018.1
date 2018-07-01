@@ -31,7 +31,7 @@ login :: IO ()
 login = do
          foo <- getLine
          putStrLn "\n*******************************************************************\n"
-         putStrLn "\nLogin \n\n"
+         putStrLn "\nAntes de realizar o pedido, por favor, faça o login: \n\n"
          putStrLn "Digite seu cpf: "
          cpf <- getLine
          putStrLn "Digite sua senha: "
