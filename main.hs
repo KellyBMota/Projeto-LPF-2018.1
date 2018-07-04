@@ -23,7 +23,7 @@ main = do
        putStrLn "\n*******************************************************************\n"
        putStrLn "Bem-vindo ao aplicativo FastFlix! Realize a operação desejada:\n"
        putStrLn "1-Cadastro"
-       putStrLn "2-Cardapio"
+       putStrLn "2-Login e Cardapio"
        putStrLn "3-Fechar aplicativo\n\n"
        putStrLn "\n*******************************************************************\n\n"
 

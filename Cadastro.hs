@@ -96,7 +96,7 @@ cpfCadast (a:as) = (elemento 1 (words a)):(cpfCadast as)
 fErro :: IO()
 fErro = do
     foo <- getLine
-    putStrLn "\nDigite \n1- Cadastrar Novamente\n2- Menu"
+    putStrLn "\nDados inválidos. Cadastro não realizado. O que deseja fazer? \n1- Cadastrar Novamente\n2- Menu"
     choose <- getChar
     if choose == '1'
        then do 

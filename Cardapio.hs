@@ -1,6 +1,7 @@
 module Cardapio (
     mostrarCardapio
 ) where
+  
 import Control.Exception
 import System.IO
 import System.IO.Error

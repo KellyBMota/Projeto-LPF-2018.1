@@ -1,9 +1,9 @@
 Tripinha de bode 10.00
 Espetinho 4.00
 Asinha de frango 5.00
-Pão de alho 3.00
+Pao de alho 3.00
 Bolinho de bacalhau 2.00
 Salgado 4.50
-Fritas (Porção Pequena) 6.00
-Fritas (Porção Média) 8.00
-Fritas (Porção Grande) 10.00
+Fritas (Porcao Pequena) 6.00
+Fritas (Porcao Media) 8.00
+Fritas (Porcao Grande) 10.00

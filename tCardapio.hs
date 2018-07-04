@@ -24,14 +24,18 @@ hamburguers = do
         pratos2 = lines contents2
     putStr $ unlines pratos2
     choice <- getLine
-    putStrLn $ "opção escolhida:" ++ choice    
-    let number = read choice     
-        itemPedido = (pratos1 !! number)
-    appendFile "arquivos\\pedido.txt" (itemPedido ++ "\n")
-    hFlush arqler
-    hFlush arqmostrar
-    hClose arqler
-    hClose arqmostrar
+    let aux = rInt choice
+    if aux >= length pratos1
+        then do
+          putStrLn "Nao existe essa opcao, tente novamente"
+          hamburguers
+        else do
+          putStrLn $ "opção escolhida:" ++ choice    
+          let number = read choice     
+              itemPedido = (pratos1 !! number)
+          appendFile "arquivos\\pedido.txt" (itemPedido ++ "\n")
+          hClose arqler
+          hClose arqmostrar
 
 
 petiscos = do
@@ -44,14 +48,18 @@ petiscos = do
         pratos2 = lines contents2
     putStr $ unlines pratos2
     choice <- getLine
-    putStrLn $ "opção escolhida:" ++ choice    
-    let number = read choice     
-        itemPedido = (pratos1 !! number)
-    appendFile "arquivos\\pedido.txt" (itemPedido ++ "\n")
-    hFlush arqler
-    hFlush arqmostrar
-    hClose arqler
-    hClose arqmostrar
+    let aux = rInt choice
+    if aux >= length pratos1
+        then do
+          putStrLn "Nao existe essa opcao, tente novamente"
+          petiscos
+        else do
+          putStrLn $ "opção escolhida:" ++ choice    
+          let number = read choice     
+              itemPedido = (pratos1 !! number)
+          appendFile "arquivos\\pedido.txt" (itemPedido ++ "\n")
+          hClose arqler
+          hClose arqmostrar
 
 sobremesas = do
     foo <- getLine
@@ -63,15 +71,18 @@ sobremesas = do
         pratos2 = lines contents2
     putStr $ unlines pratos2
     choice <- getLine
-    putStrLn $ "opção escolhida:" ++ choice    
-    let number = read choice     
-        itemPedido = (pratos1 !! number)
-    appendFile "arquivos\\pedido.txt" (itemPedido ++ "\n")
-    hFlush arqler
-    hFlush arqmostrar
-    hClose arqler
-    hClose arqmostrar
-
+    let aux = rInt choice
+    if aux >= length pratos1
+        then do
+          putStrLn "Nao existe essa opcao, tente novamente"
+          petiscos
+        else do
+          putStrLn $ "opção escolhida:" ++ choice    
+          let number = read choice     
+              itemPedido = (pratos1 !! number)
+          appendFile "arquivos\\pedido.txt" (itemPedido ++ "\n")
+          hClose arqler
+          hClose arqmostrar
 bebidas = do
     foo <- getLine
     arqmostrar <- openFile "arquivos\\cardapioFastFlix\\bebidas.txt" ReadMode
@@ -82,11 +93,15 @@ bebidas = do
         pratos2 = lines contents2
     putStr $ unlines pratos2
     choice <- getLine
-    putStrLn $ "opção escolhida:" ++ choice    
-    let number = read choice     
-        itemPedido = (pratos1 !! number)
-    appendFile "arquivos\\pedido.txt" (itemPedido ++ "\n")
-    hFlush arqler
-    hFlush arqmostrar
-    hClose arqler
-    hClose arqmostrar
+    let aux = rInt choice
+    if aux >= length pratos1
+        then do
+          putStrLn "Nao existe essa opcao, tente novamente"
+          petiscos
+        else do
+          putStrLn $ "opção escolhida:" ++ choice    
+          let number = read choice     
+              itemPedido = (pratos1 !! number)
+          appendFile "arquivos\\pedido.txt" (itemPedido ++ "\n")
+          hClose arqler
+          hClose arqmostrar

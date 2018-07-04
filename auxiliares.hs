@@ -3,7 +3,8 @@ module Auxiliares (
     index,
     possui,
     possuiLetra,
-    rFloat
+    rFloat,
+    rInt
     ) where
 
 import Data.List
@@ -33,3 +34,6 @@ possuiLetra (a:as) | (isDigit a) = possuiLetra as
 
 rFloat :: String -> Float
 rFloat str = read str
+
+rInt :: String -> Int
+rInt str = read str
